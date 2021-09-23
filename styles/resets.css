@@ -1,0 +1,38 @@
+/* ! CSS Master Reset */
+*
+{
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	font-style: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+html
+{
+	scroll-behavior: smooth;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* ! Selection pseudo class */
+::selection
+{
+	color: #ffffff;
+	background-color: #6600ff;
+}
+
+/* ! No value, No problem */
+a[href^="http"]:empty::before
+{
+	content: attr(href);
+}
+
+/* ! Input caret color */
+input {
+	caret-color: #ff0000;
+}
