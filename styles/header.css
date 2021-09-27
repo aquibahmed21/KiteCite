@@ -1,0 +1,35 @@
+.container {
+	height: 100px;
+}
+
+.container.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	clip-path: ellipse(144% 100% at 50% 0%);
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
+}
+
+.container .logo {
+	padding: 30px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.container nav ul {
+	display: flex;
+}
+
+.container nav ul li a {
+	margin: 0 12px;
+	padding: 12px;
+}
+
+.container nav ul li a:hover {
+	color: #fff;
+	border-radius: 10px;
+	background-color: rgba(0,0,0, 0.1);
+	transition: background-color .5s linear 0s;
+}

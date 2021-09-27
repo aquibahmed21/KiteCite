@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 /* ! CSS Master Reset */
 *
 {
@@ -5,9 +7,10 @@
 	outline: 0;
 	padding: 0;
 	margin: 0;
+	color: #DFE6E6;
 	font-style: inherit;
 	font-weight: inherit;
-	font-family: inherit;
+	font-family: 'Montserrat', sans-serif;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
@@ -19,8 +22,39 @@ html
 	-webkit-text-size-adjust: 100%;
 }
 
+body {
+	background: linear-gradient(270deg, #13547a, #80d0c7);
+	background-size: 400% 400%;
+
+	-webkit-animation: BgColor 16s ease infinite;
+	-moz-animation: BgColor 16s ease infinite;
+	-o-animation: BgColor 16s ease infinite;
+	animation: BgColor 16s ease infinite;
+}
+
+@-webkit-keyframes BgColor {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes BgColor {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-o-keyframes BgColor {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes BgColor {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
 /* ! Selection pseudo class */
-::selection
+*::selection
 {
 	color: #ffffff;
 	background-color: #6600ff;
@@ -35,4 +69,12 @@ a[href^="http"]:empty::before
 /* ! Input caret color */
 input {
 	caret-color: #ff0000;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
